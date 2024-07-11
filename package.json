@@ -1,7 +1,7 @@
 {
-  "name": "photo-gallery-ng-capacitor",
+  "name": "top_new_radio_identificate_musica",
   "version": "2.0.0",
-  "author": "Ionic Framework",
+  "author": "Ricardo Rodriguez",
   "homepage": "https://ionicframework.com/docs/angular/your-first-app",
   "scripts": {
     "ng": "ng",
@@ -9,7 +9,8 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "generate-icons-android": "npx capacitor-assets generate --android"
   },
   "private": true,
   "dependencies": {
@@ -19,13 +20,13 @@
     "@angular/platform-browser": "^12.0.1",
     "@angular/platform-browser-dynamic": "^12.0.1",
     "@angular/router": "^12.0.1",
-    "@capacitor/android": "^4.0.0",
+    "@capacitor/android": "4.4.0",
     "@capacitor/camera": "^4.0.0",
     "@capacitor/core": "^4.0.0",
     "@capacitor/filesystem": "^4.0.0",
     "@capacitor/ios": "^4.0.0",
     "@capacitor/preferences": "^4.0.1",
-    "@capacitor/splash-screen": "^4.0.0",
+    "@capacitor/splash-screen": "^4.2.0",
     "@ionic/angular": "^5.6.7",
     "@ionic/pwa-elements": "^3.0.2",
     "core-js": "^3.6.5",
@@ -39,6 +40,7 @@
     "@angular/compiler": "^12.0.1",
     "@angular/compiler-cli": "^12.0.1",
     "@angular/language-service": "^12.0.1",
+    "@capacitor/assets": "^3.0.4",
     "@capacitor/cli": "^4.0.0",
     "@ionic/angular-toolkit": "^4.0.0",
     "@types/jasmine": "^3.5.10",
@@ -57,5 +59,5 @@
     "tslint": "~6.1.0",
     "typescript": "^4.2.4"
   },
-  "description": "Build a photo gallery app that runs on iOS, Android, and the web - with just one codebase"
+  "description": "App streaming radio chile"
 }

@@ -1,17 +1,125 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>
-      Tab 1
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
-
-<ion-content>
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
+<div class="ion-page" id="main-content">
+  <ion-header>
+    <ion-toolbar color="secondary">
+      <ion-buttons slot="start">
+        <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+      <ion-buttons slot="end">
+        <img src="assets/img/logo.png" alt="logo" width="50px" height="50px" />
+      </ion-buttons>
+      <ion-title>
+        Top New Radio <br />
+        <span class="subtitle">Identifícate Con Tu Música</span>
+      </ion-title>
     </ion-toolbar>
   </ion-header>
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
-</ion-content>
+  <ion-content>
+    <iframe
+      id="topnewradiovideo"
+      src="https://www.topnewradio.cl/videos_app/topnewradiovideo.html"
+      width="100%"
+      height="100%"
+    ></iframe>
+  </ion-content>
+</div>
+
+<ion-menu contentId="main-content"  menuId="menu1">
+  <ion-header>
+    <ion-toolbar color="secondary">
+      <ion-buttons slot="start">
+        <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+      <ion-title>
+        Top New Radio <br />
+        <span class="subtitle">Nuestras Redes Sociales</span>
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content class="ion-padding">
+    <ion-list>
+      <ion-list-header>
+        <ion-label> Encuentranos en: </ion-label>
+      </ion-list-header>
+      <ion-item>
+        <ion-label>
+          <a href="https://www.facebook.com/topnewradio" target="_blank">
+            <img
+              class="item-icon"
+              src="assets/img/facebook.png"
+              alt="face"
+              width="20px"
+              height="20px"
+            />
+            Facebook Top New Radio
+          </a>
+        </ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>
+          <a href="https://www.instagram.com/topnewradio/" target="_blank">
+            <img
+              class="item-icon"
+              src="assets/img/instagram.png"
+              alt="insta"
+              width="20px"
+              height="20px"
+            />
+            Instagram Top New Radio
+          </a>
+        </ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>
+          <a
+            href="https://m3u.cl/lista-iptv-chile.php/topnewradio"
+            target="_blank"
+          >
+            <img
+              class="item-icon"
+              src="assets/img/M3U.png"
+              alt="m3u"
+              width="20px"
+              height="20px"
+            />
+            M3U Top New Radio
+          </a>
+        </ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>
+          <a href="mailto:topnewradio2019@gmail.com" target="_blank">
+            <img
+              class="item-icon"
+              src="assets/img/gmail.png"
+              alt="gmail"
+              width="20px"
+              height="20px"
+            />
+            topnewradio2019@gmail.com
+          </a>
+        </ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>
+          <a
+            href="https://api.whatsapp.com/send?phone=56923613472"
+            target="_blank"
+          >
+            <img
+              class="item-icon-w"
+              src="assets/img/whatsap.png"
+              alt="what"
+              width="28px"
+              height="28px"
+            />+569 23613472
+          </a>
+        </ion-label>
+      </ion-item>
+    </ion-list>
+
+    <div class="logo-menu-content">
+      <img src="assets/img/logo.png" alt="logo" width="130px" height="130px" />
+    </div>
+  </ion-content>
+</ion-menu>

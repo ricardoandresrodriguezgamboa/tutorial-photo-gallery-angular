@@ -1,39 +1,41 @@
-import { Component } from '@angular/core';
-import { ActionSheetController } from '@ionic/angular';
-import { UserPhoto, PhotoService } from '../services/photo.service';
+import { Component } from "@angular/core";
+import { ActionSheetController, MenuController } from "@ionic/angular";
+
 
 @Component({
-  selector: 'app-tab2',
-  templateUrl: 'tab2.page.html',
-  styleUrls: ['tab2.page.scss']
+  selector: "app-tab2",
+  templateUrl: "tab2.page.html",
+  styleUrls: ["tab2.page.scss"],
 })
 export class Tab2Page {
+  constructor(public actionSheetController: ActionSheetController,private menu: MenuController) {}
 
-  constructor(public photoService: PhotoService, public actionSheetController: ActionSheetController) {}
+  ionViewDidEnter() {
+    const iframe = document.getElementById('ritmotoplatinovideo') as HTMLIFrameElement;
+    if (iframe) {
+      iframe.src = 'https://www.topnewradio.cl/videos_app/ritmotoplatinovideo.html';
+    }
 
-  async ngOnInit() {
-    await this.photoService.loadSaved();
+    this.menuCtrl();
+
   }
 
-  public async showActionSheet(photo: UserPhoto, position: number) {
-    const actionSheet = await this.actionSheetController.create({
-      header: 'Photos',
-      buttons: [{
-        text: 'Delete',
-        role: 'destructive',
-        icon: 'trash',
-        handler: () => {
-          this.photoService.deletePicture(photo, position);
-        }
-      }, {
-        text: 'Cancel',
-        icon: 'close',
-        role: 'cancel',
-        handler: () => {
-          // Nothing to do, action sheet is automatically closed
-         }
-      }]
-    });
-    await actionSheet.present();
+  menuCtrl(){
+    this.menu.close('menu1'); 
+    this.menu.enable(false, 'menu1'); 
+
+    this.menu.enable(true, 'menu2'); 
   }
+
+  ionViewDidLeave(){
+    const iframe = document.getElementById('ritmotoplatinovideo') as HTMLIFrameElement;
+    if (iframe) {
+      iframe.src = '';
+    }
+  }
+
+
+  
 }
+
+
