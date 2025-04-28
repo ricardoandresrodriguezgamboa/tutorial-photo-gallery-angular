@@ -36,7 +36,7 @@ export class Tab2Page {
  
   loadVideo() {
     const video = document.getElementById('ritmotoplatinovideo') as HTMLVideoElement;
-    const videoSrc = 'https://panel.tvstream.cl:1936/8048/8048/playlist.m3u8';
+    const videoSrc = 'https://5ff3d9babae13.streamlock.net:443/vzzfdajnnf/vzzfdajnnf/playlist.m3u8';
 
     if (Hls.isSupported()) {
       this.hls = new Hls({
