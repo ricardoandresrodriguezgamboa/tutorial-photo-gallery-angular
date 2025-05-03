@@ -36,7 +36,7 @@ export class Tab1Page {
  
   loadVideo() {
     const video = document.getElementById('topnewradiovideo') as HTMLVideoElement;
-    const videoSrc = 'https://panel.tvstream.cl:1936/8052/8052/playlist.m3u8';
+    const videoSrc = 'https://5ff3d9babae13.streamlock.net:443/dxwdsmgesp/dxwdsmgesp/playlist.m3u8';
 
     if (Hls.isSupported()) {
       this.hls = new Hls({
