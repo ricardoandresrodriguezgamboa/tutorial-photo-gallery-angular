@@ -2,6 +2,7 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion rootProject.ext.compileSdkVersion
+    namespace 'io.ionic.top.news.radio.identificate.musica'
     defaultConfig {
         applicationId "io.ionic.top.news.radio.identificate.musica"
         minSdkVersion rootProject.ext.minSdkVersion
@@ -51,3 +52,6 @@ try {
 } catch(Exception e) {
     logger.info("google-services.json not found, google-services plugin not applied. Push Notifications won't work")
 }
+
+
+tasks.register("testClasses")
