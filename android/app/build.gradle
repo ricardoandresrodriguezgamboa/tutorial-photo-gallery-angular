@@ -6,7 +6,7 @@ android {
         applicationId "io.ionic.top.news.radio.identificate.musica"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
-        versionCode 4
+        versionCode 6
         versionName '1'
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         aaptOptions {
@@ -41,7 +41,7 @@ dependencies {
     implementation project(':capacitor-cordova-android-plugins')
 }
 
-apply from: 'capacitor.build.gradle'
+//apply from: 'capacitor.build.gradle'
 
 try {
     def servicesJSON = file('google-services.json')
